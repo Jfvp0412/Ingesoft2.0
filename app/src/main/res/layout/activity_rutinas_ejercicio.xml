@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_workout1"
+    tools:context=".ClasesPrincipales.RutinasEjercicio">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#dee3e2"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dee3e2"
+            app:layout_constraintBottom_toTopOf="@+id/rutinasDesc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divpage">
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divpage"
+        android:layout_width="408dp"
+        android:layout_height="4dp"
+        android:layout_marginBottom="32dp"
+        android:background="#25293E"
+        app:layout_constraintBottom_toTopOf="@+id/volverWorkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rutinas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="141dp"
+        android:layout_marginRight="141dp"
+        android:layout_marginBottom="69dp"
+        android:lineSpacingExtra="8dp"
+        android:paddingTop="60dp"
+        android:text="EJERCICIOS"
+        android:textColor="#FAFBFB"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/volverWorkout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rutinasDesc"
+        android:layout_width="158dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:lineSpacingExtra="5dp"
+        android:text="5 ENTRENAMIENTOS"
+        android:textColor="#FAFBFB"
+        android:textSize="16sp"
+        app:fontFamily="sans-serif"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volverWorkout" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rutinas">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fitone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subintropage">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/pechamen" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/pecho"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PECHO"
+                        android:textColor="#FAFBFB"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/pechoDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="#3A3A3A"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fittwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fitone">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/arms" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/brazo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BRAZO"
+                        android:textColor="#FAFBFB"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/brazoDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="#3A3A3A"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fitthree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fittwo">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/legs" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/pierna"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PIERNA"
+                        android:textColor="#FAFBFB"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/piernaDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="#3A3A3A"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fitfour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fitthree">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/chocolatina" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/abdomen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ABDOMEN"
+                        android:textColor="#FAFBFB"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/abdomenDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="#3A3A3A"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fit5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fitfour">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/espaldibiris" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/espalda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HOMBRO Y ESPALDA"
+                        android:textColor="#FAFBFB"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/espaldaDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="#3A3A3A"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/volverWorkout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="19dp"
+        android:background="#FAFBFB"
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toTopOf="@+id/rutinasDesc"
+        app:layout_constraintEnd_toStartOf="@+id/rutinas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divpage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dee3e2"
+    tools:context=".ClasesPrincipales.SeriesPersonalizadas">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutYoga"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="8dp">
+
+        <ImageView
+            android:id="@+id/imgPersonalizada"
+            android:src="@drawable/logo"
+            android:layout_width="220dp"
+            android:layout_marginLeft="70dp"
+            android:layout_height="220dp"/>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/nombrePersonalizada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="24dp"
+        android:lineSpacingExtra="8dp"
+        android:text="Nombre del Ejercicio"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutYoga"
+        android:layout_marginLeft="24dp" />
+
+    <RelativeLayout
+        android:id="@+id/miLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombrePersonalizada"
+        android:layout_marginLeft="24dp">
+
+        <TextView
+            android:id="@+id/CantidadSets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/TextoSets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sets"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="320dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/miLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/miLayout"
+        android:layout_marginLeft="24dp">
+
+        <TextView
+            android:id="@+id/cantidadReps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/TextoReps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reps"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="320dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+
+
+
+    <View
+        android:id="@+id/divpage"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:background="#25293E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/miLayout2"
+        />
+
+
+    <TextView
+        android:id="@+id/TextoDescrip"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="2dp"
+        android:justificationMode="inter_word"
+        android:text="Para realizar la postura de la silla partimos con los brazos a ambos lados del cuerpo y los pies separados aproximadamente a la anchura de la cadera. Elevamos nuestros brazos hacia el techo, con la musculatura de los mismos activada y las palmas de las manos enfrentadas, y hasta que los llevamos aproximadamente a la altura de las orejas. Al soltar el aire flexionamos ligeramente las rodillas, intentando que estas queden prácticamente a la misma altura que los tobillos"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divpage" />
+
+    <View
+        android:id="@+id/bgprogress"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/btnRegresarMiRutina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="CONTINUAR"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

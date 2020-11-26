@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">WorkPeace</string>
+    <string name="Bienvenido">Bienvenido</string>
+    <string name="Logo">Logo</string>
+    <string name="Nombre">Nombre Completo</string>
+    <string name="Usuario">Usuario</string>
+    <string name="clave">Contraseña</string>
+    <string name="btnRegistro">Registrarse</string>
+    <string name="btnCuenta">¿Ya tienes cuenta? Iniciar Sesión</string>
+    <string name="HolaDeNuevo">Hola! bienvenid@ de nuevo</string>
+    <string name="Iniciar">Inicia sesión para continuar</string>
+    <string name="OlvidoClave">¿Ha olvidado su contraseña?</string>
+    <string name="Sesion">Iniciar Sesión</string>
+    <string name="InTech">By InTech</string>
+    <string name="UsuarioNuevo">¿Nuevo Usuario? Registrate aqui</string>
+    <string name="Registrarse">Registrate para empezar tu nuevo viaje</string>
+    <string name="Ejemplo">PANTALLA PERFIL</string>
+    <string name="Ejem">HOLA</string>
+    <string name="A">CHAO</string>
+    <string name="B">BUENAS</string>
+    <string name="Mail">Email</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

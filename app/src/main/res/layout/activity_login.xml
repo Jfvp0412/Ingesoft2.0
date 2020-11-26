@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClasesPrincipales.Login"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_login"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="15dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_logo"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/Logo"
+            android:src="@drawable/logo_azul" />
+
+        <TextView
+            android:id="@+id/h1Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/HolaDeNuevo"
+            android:textColor="#000"
+            android:fontFamily="@font/sweet_fig"
+            android:textSize="10sp"
+            android:layout_marginTop="-20dp"/>
+
+        <TextView
+            android:id="@+id/h2Login"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/always_in_my_heart"
+            android:textColor="#000"
+            android:text="@string/Iniciar"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/usuarioLogin"
+                android:hint="@string/Usuario"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/correoLogin"
+                android:hint="@string/Mail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/claveLogin"
+                android:hint="@string/clave"
+                app:passwordToggleEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnOlvidoClaveLogin"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:text="@string/OlvidoClave"
+                android:layout_gravity="end"/>
+
+            <Button
+                android:id="@+id/btnIniciarSesionLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Sesion"
+                android:background="#000"
+                android:textColor="#fff"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/btnPantallaRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="#ECDEB8"
+
+                android:text="@string/UsuarioNuevo" />
+
+        </LinearLayout>
+
+
+
+
+        <!--DISEÑO DEL LOGO-->
+    </LinearLayout>
+
+
+
+</ScrollView>

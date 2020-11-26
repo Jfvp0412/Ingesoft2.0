@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_inicio"
+    tools:context=".ClasesPrincipales.Perfil">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="#dee3e2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:background="#dee3e2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:id="@+id/volverPerfil"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_back"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <!--First Section-->
+        <RelativeLayout
+            android:layout_width="396dp"
+            android:layout_height="163dp"
+            android:padding="20dp">
+
+
+            <TextView
+                android:id="@+id/fullname_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:includeFontPadding="false"
+                android:text="Su nombre"
+                android:textColor="#050505"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/username_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullname_field"
+                android:layout_marginLeft="10dp"
+                android:includeFontPadding="false"
+                android:text="su email"
+                android:textColor="#050505"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textObjetivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullname_field"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="41dp"
+                android:includeFontPadding="false"
+                android:text="su email"
+                android:textColor="#050505"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <!--Third Section-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/full_name_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EADAAB"
+                android:hint="Full Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EADAAB"
+                android:hint="E-Mail">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EADAAB"
+                android:hint="Edad">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EADAAB"
+                android:hint="Contraseña">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Objetivo:"
+                android:textColor="#F8F8F8"
+                android:textSize="25sp"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/horizontalScrollView">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <RadioButton
+                        android:id="@+id/radioFort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="#F8F8F8"
+                        android:text="Fortalecimiento"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/radioAcondicionamiento"
+                        android:text="Acondicionamiento"
+                        android:textColor="#F8F8F8"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <RadioButton
+                        android:id="@+id/radioBajar"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Bajar de peso"
+                        android:textColor="#F8F8F8"
+                        android:textSize="20sp" />
+                </RadioGroup>
+            </HorizontalScrollView>
+            <Button
+                android:id="@+id/btnActualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="#000"
+                android:text="Actualizar Datos"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

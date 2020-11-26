@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".ClasesPrincipales.Init"
+    android:id="@+id/drawer_layout">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/navigationTheme"
+        android:background="#dee3e2"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/main_menu"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:background="#845F5F"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_menu"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="#845F5F"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="WORKOUTS"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:background="@drawable/fondo_workout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!---INICIO LINEAR LAYOUT PRINCIPIANTE -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/fortalecimiento"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fortalecimiento"
+                            android:textSize="20sp"
+                            android:textColor="#FAFBFB"
+                            android:textAllCaps="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ver todas"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fitForta1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/force1"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/fitUnoTitulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="PRINCIPIANTES"
+                                android:textColor="#FAFBFB"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/fitUnoDesc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="25 a 35 minutos"
+                                android:textColor="#FAFBFB"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/fitForta2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fitForta1"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/fitcouple2"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/fitDosTitulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="INTERMEDIOS"
+                                android:textColor="#FAFBFB"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/fitDosDesc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="30 a 40 minutos"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#FAFBFB"
+                                android:textSize="15sp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fitForta3"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fitForta2"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/force3"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/fitTresTitulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AVANZADOS"
+                                android:textColor="#FAFBFB"
+                                android:textSize="17sp"/>
+
+                            <TextView
+                                android:id="@+id/fitTresDesc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="40 a 50 minutos"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#FAFBFB"
+                                android:textSize="15sp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <!---FIN LINEAR LAYOUT PRINCIPIANES -->
+
+
+
+
+                </LinearLayout>
+
+                <!---INICIO LINEAR LAYOUT INTERMEDIO -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/acondicionamiento"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ACONDICIONAMIENTO"
+                            android:textSize="20sp"
+                            android:textColor="#FAFBFB"
+                            android:textAllCaps="true"/>
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/Acon1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/fitcouple2"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/fitCuatroTitulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="PRINCIPIANTES"
+                                android:textColor="#FAFBFB"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/fitCuatroDesc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="25 a 35 minutos"
+                                android:textColor="#FAFBFB"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/Acon2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Acon1"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/acon2"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/fitCincoTitulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="INTERMEDIOS"
+                                android:textColor="#FAFBFB"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/fitCincoDesc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="30 a 40 minutos"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#FAFBFB"
+                                android:textSize="15sp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Acon3"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Acon2"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/acon3"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/fitSeisTitulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AVANZADOS"
+                                android:textColor="#FAFBFB"
+                                android:textSize="17sp"/>
+
+                            <TextView
+                                android:id="@+id/fitSeisDesc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="45 a 55 minutos"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#FAFBFB"
+                                android:textSize="15sp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                    <!-- FIN LINEAR LAYOUT INTERMEDIO -->
+
+                </LinearLayout>
+
+                <!-- INICIO LINEAR LAYOUT AVANZADO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/bajarPeso"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BAJAR DE PESO"
+                            android:textSize="20sp"
+                            android:textColor="#FAFBFB"
+                            android:textAllCaps="true"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/bajar_peso1"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/fitSieteTitulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="PRINCIPIANTES"
+                                android:textColor="#FAFBFB"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/fitSieteDesc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="25 a 35 minutos"
+                                android:textColor="#FAFBFB"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/fitOcho"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fitone"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/bajar_peso2"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/fitOchoTitulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="INTERMEDIOS"
+                                android:textColor="#FAFBFB"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/fitOchoDesc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="40 a 45 minutos"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#FAFBFB"
+                                android:textSize="15sp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fitNueve"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fitOcho"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/bajar_peso3"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/fitNueveTitulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AVANZADOS"
+                                android:textColor="#FAFBFB"
+                                android:textSize="17sp"/>
+
+                            <TextView
+                                android:id="@+id/fitNueveDesc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="40 a 50 minutos"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#FAFBFB"
+                                android:textSize="15sp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

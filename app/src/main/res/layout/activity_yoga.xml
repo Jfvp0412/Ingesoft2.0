@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_yoga"
+    tools:context=".ClasesPrincipales.Yoga"
+    android:id="@+id/drawer_layout">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/navigationTheme"
+        android:background="#d8e6de"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/main_menu"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:background="#2720F9"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_menu"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="#2720F9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="YOGA"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:background="@drawable/fondo_yoga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!---INICIO LINEAR LAYOUT PRINCIPIANTE -->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nombreRutinaYoga"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="YOGA PARA FUERZA"
+                            android:textSize="20sp"
+                            android:textColor="#000"
+                            android:textAllCaps="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ver todas"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/yoga"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/yoga1Titulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="PRINCIPIANTES"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/yoga1desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="3 a 7 minutos"
+                                android:textColor="#3A3A3A"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/fitDos"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fitone"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/yoga1"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/yoga2Titulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="INTERMEDIOS"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/yoga2Desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="6 a 10 minutos"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#3A3A3A"
+                                android:textSize="15sp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fitTres"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/yoga2"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/yoga3Titulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AVANZADOS"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <TextView
+                                android:id="@+id/yoga3Desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="8 a 12 minutos"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#3A3A3A"
+                                android:textSize="15sp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!---FIN LINEAR LAYOUT PRINCIPIANES -->
+
+
+
+
+                </LinearLayout>
+
+                <!---INICIO LINEAR LAYOUT INTERMEDIO -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nombreRutinaYoga2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="YOGA PARA FLEXIBILIDAD"
+                            android:textSize="20sp"
+                            android:textColor="#000"
+                            android:textAllCaps="true"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/yoga4"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/yoga4Titulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="PRINCIPIANTES"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/Yoga4Desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="3 a 7 minutos"
+                                android:textColor="#3A3A3A"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/fitCinco"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fitone"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/yoga3"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/yoga5titulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="INTERMEDIOS"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/yogA5Desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="6 a 10 minutos"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#3A3A3A"
+                                android:textSize="15sp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fitSeis"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/yoga5"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/yoga6Titulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AVANZADOS"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <TextView
+                                android:id="@+id/fitSeisDesc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="8 a 12 minutos"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#3A3A3A"
+                                android:textSize="15sp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- FIN LINEAR LAYOUT INTERMEDIO -->
+
+                </LinearLayout>
+
+                <!-- INICIO LINEAR LAYOUT AVANZADO -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nombreRutinaYoga3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="YOGA PARA TONIFICARSE"
+                            android:textAllCaps="true"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/yoga6" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/yoga7Titulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="PRINCIPIANTES"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/yoga7Desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="3 a 7 minutos"
+                                android:textColor="#3A3A3A"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fitOcho"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fitone">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/yoga7" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/yoga8Titulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="INTERMEDIOS"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/yoga8Desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="6 a 10 minutos"
+                                android:textColor="#3A3A3A"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fitNueve"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/yoga20" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/yoga9Titulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AVANZADOS"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/yoga9Desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="8 a 12 minutos"
+                                android:textColor="#3A3A3A"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nombreRutinaYoga5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="YOGA DIARA PARA ESPALDA"
+                            android:textSize="20sp"
+                            android:textColor="#000"
+                            android:textAllCaps="true"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/yoga14"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/yoga13Titulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="PRINCIPIANTES"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/yoga13Desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="3 a 7 minutos"
+                                android:textColor="#3A3A3A"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/fit14"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fitone"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/yoga15"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/yoga14Titulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="INTERMEDIOS"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/yoga14Desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="6 a 10 minutos"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#3A3A3A"
+                                android:textSize="15sp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fit15"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/yoga16"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/yoga15Titulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AVANZADOS"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <TextView
+                                android:id="@+id/yoga15Desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="8 a 12 minutos"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#3A3A3A"
+                                android:textSize="15sp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+

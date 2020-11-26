@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_workout2"
+    tools:context=".ClasesPrincipales.Exercise">
+
+    <LinearLayout
+        android:background="#ffae00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/intropage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:background="#FAFBFB"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toTopOf="@+id/intropage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/volverEjer"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_back"
+                android:layout_marginTop="85dp"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/divpage"
+        android:layout_width="401dp"
+        android:layout_height="4dp"
+        android:layout_marginBottom="20dp"
+        android:background="#25293E"
+        app:layout_constraintBottom_toTopOf="@+id/intropage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/intropage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginBottom="6dp"
+        android:lineSpacingExtra="8dp"
+        android:paddingTop="60dp"
+        android:text="EJERCICIOS"
+        android:textColor="#FAFBFB"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/subintropage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divpage" />
+
+    <TextView
+        android:id="@+id/subintropage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:lineSpacingExtra="5dp"
+        android:text=""
+        android:textColor="#3A3A3A"
+        android:textSize="16sp"
+        app:fontFamily="sans-serif"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="@+id/intropage"
+        app:layout_constraintTop_toBottomOf="@+id/intropage" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="408dp"
+        android:layout_height="525dp"
+        android:layout_marginBottom="102dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subintropage">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fitone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subintropage">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ejer1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flexiones"
+                        android:textColor="#FAFBFB"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/fitonedesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="3 Sets -  10 reps"
+                        android:textColor="#FAFBFB"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fittwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fitone">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ejer2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aperturas de pecho"
+                        android:textColor="#FAFBFB"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/fittwodesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="4 Sets - 25 reps"
+                        android:textColor="#FAFBFB"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fitthree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fittwo">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ejer3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flexiones espartanas"
+                        android:textColor="#FAFBFB"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/fitthreedesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="2 Sets - 8 reps"
+                        android:textColor="#FAFBFB"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fitfour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fitthree">
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ejer4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flexiones Diamante"
+                        android:textColor="#FAFBFB"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/fitfourdesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="3 Sets 12 reps"
+                        android:textColor="#FAFBFB"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fit5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fitfour">
+
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ejer5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flexiones Diamante"
+                        android:textColor="#FAFBFB"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/fit5desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="3 Sets 12 reps"
+                        android:textColor="#FAFBFB"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/fit6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fit5">
+
+                <ImageView
+                    android:id="@+id/img6"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ejer6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flexiones Diamante"
+                        android:textColor="#FAFBFB"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/fit6desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="3 Sets 12 reps"
+                        android:textColor="#FAFBFB"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

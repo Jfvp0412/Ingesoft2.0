@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="HOME"
+            android:icon="@drawable/ic_home"/>
+
+        <item
+            android:id="@+id/nav_mis_rutinas"
+            android:title="MIS RUTINAS"
+            android:icon="@drawable/ic_mis_rutinas"/>
+
+
+    </group>
+
+    <item android:title="PERFIL">
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_perfil"
+                    android:title="MI PERFIL"
+                    android:icon="@drawable/ic_person"/>
+                <item
+                    android:id="@+id/nav_recordatorio"
+                    android:title="PROGRAMAR RECORDATORIOS"
+                    android:icon="@drawable/ic_recordatorio"/>
+                <item
+                android:id="@+id/nav_logout"
+                android:title="LOG-OUT"
+                android:icon="@drawable/ic_lock"/>
+
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="CATEGORIAS">
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_meditacion"
+                    android:title="MEDITACIÓN"
+                    android:icon="@drawable/ic_bullet"/>
+
+                <item
+                    android:id="@+id/nav_yoga"
+                    android:title="YOGA"
+                    android:icon="@drawable/ic_bullet"/>
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="REPORTES">
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_marcas_personales"
+                    android:title="MARCAS PERSONALES"
+                    android:icon="@drawable/ic_dias_meditando"/>
+
+                <item
+                    android:id="@+id/nav_peso_y_medidas"
+                    android:title="PESO Y MEDIDAS"
+                    android:icon="@drawable/ic_peso"/>
+
+
+                <item
+                    android:id="@+id/nav_dias_ejercicio"
+                    android:title="HISTORIAL DE EJERCICIO"
+                    android:icon="@drawable/ic_calendario"/>
+                <item
+                    android:id="@+id/nav_dias_yoga"
+                    android:title="HISTORIAL DE YOGA"
+                    android:icon="@drawable/ic_calendario"/>
+                <item
+                    android:id="@+id/nav_dias_meditacion"
+                    android:title="HISTORIAL DE MEDITACIÓN "
+                    android:icon="@drawable/ic_calendario"/>
+
+
+
+
+            </group>
+        </menu>
+    </item>
+
+
+
+
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_historial2"
+    tools:context=".ClasesPrincipales.HistorialYogaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="287dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp"
+            android:layout_marginBottom="20dp"
+            android:text="HISTORIAL DIAS DE YOGA"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textSize="31sp"
+            app:layout_constraintBottom_toTopOf="@+id/textTotalYog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textTotalYog"
+            android:layout_width="309dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="49dp"
+            android:text="Total de sesiones:"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textSize="27sp"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerViewYoga"
+            app:layout_constraintEnd_toEndOf="@+id/titulo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewYoga"
+            android:layout_width="402dp"
+            android:layout_height="444dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="43dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTotalYog"
+            tools:ignore="MissingConstraints"></androidx.recyclerview.widget.RecyclerView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

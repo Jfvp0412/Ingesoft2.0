@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_historial1"
+    tools:context=".ClasesPrincipales.HistorialEjercicioActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/fortalecimiento4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="HISTORIAL DIAS DE EJERCICIO"
+            android:textAllCaps="true"
+            android:textColor="#020202"
+            android:textSize="27sp"
+            app:layout_constraintBottom_toTopOf="@+id/textPierna"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewEjercicios"
+            android:layout_width="394dp"
+            android:layout_height="286dp"
+            android:layout_marginBottom="43dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTotal"
+            tools:ignore="MissingConstraints"></androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textPecho"
+            android:layout_width="154dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:text="TextView"
+            android:textColor="#020202"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textPierna"
+            app:layout_constraintEnd_toStartOf="@+id/textPierna"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textPierna"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textPierna"
+            android:layout_width="154dp"
+            android:layout_height="67dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="17dp"
+            android:text="TextView"
+            android:textColor="#020202"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textBrazo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textPecho"
+            app:layout_constraintTop_toBottomOf="@+id/fortalecimiento4" />
+
+        <TextView
+            android:id="@+id/textAbdomen"
+            android:layout_width="154dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:text="TextView"
+            android:textColor="#020202"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textBrazo"
+            app:layout_constraintEnd_toStartOf="@+id/textBrazo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textBrazo"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textBrazo"
+            android:layout_width="154dp"
+            android:layout_height="67dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="18dp"
+            android:text="TextView"
+            android:textColor="#020202"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textTotal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textAbdomen"
+            app:layout_constraintTop_toBottomOf="@+id/textPierna" />
+
+        <TextView
+            android:id="@+id/textEspalda"
+            android:layout_width="154dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginRight="68dp"
+            android:layout_marginBottom="29dp"
+            android:text="TextView"
+            android:textColor="#020202"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerViewEjercicios"
+            app:layout_constraintEnd_toStartOf="@+id/textTotal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textAbdomen"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textTotal"
+            android:layout_width="154dp"
+            android:layout_height="67dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="48dp"
+            android:text="TextView"
+            android:textColor="#020202"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerViewEjercicios"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textEspalda"
+            app:layout_constraintTop_toBottomOf="@+id/textBrazo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgitemdoes"
+    android:orientation="horizontal"
+    android:layout_marginBottom="20dp"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical"
+        android:layout_width="220dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titledoesRutina"
+            android:layout_marginTop="19dp"
+            android:textSize="22sp"
+            android:textColor="#000C5D"
+            android:text="Buy whiskas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/descdoesRutina"
+            android:textSize="18sp"
+            android:textColor="#ADADAD"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/datedoesRutina"
+                android:textSize="18sp"
+                android:textColor="#F63EA5"
+                android:layout_marginTop="8dp"
+                android:text="Tomorrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#F63EA5"
+                android:text="Sets"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="50dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/dateLasHorasRutina"
+                android:textSize="18sp"
+                android:textColor="#F63EA5"
+                android:layout_marginTop="8dp"
+                android:text="Tomorrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#F63EA5"
+                android:layout_marginTop="9dp"
+                android:text="Reps"
+
+                android:layout_marginLeft="50dp"/>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

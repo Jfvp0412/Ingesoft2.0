@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#dee3e2"
+    android:padding="30dp">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NombreRutina"
+        android:hint="Nombre de la rutina"
+        android:background="@drawable/round_edittext"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitRutina"
+        android:text="AGREGAR RUTINA"
+        android:background="#dee3e2"
+        android:layout_marginTop="20dp"/>
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelarRutina"
+        android:text="CANCELAR RUTINA"
+        android:background="#dee3e2"
+        android:layout_marginTop="20dp"/>
+
+
+        
+
+</LinearLayout>

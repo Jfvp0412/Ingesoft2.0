@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_historial3"
+    tools:context=".ClasesPrincipales.HistorialMeditacionActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/fortalecimiento3"
+            android:layout_width="282dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginRight="67dp"
+            android:layout_marginBottom="17dp"
+            android:text="HISTORIAL DIAS DE MEDITACIÓN"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textSize="31sp"
+            app:layout_constraintBottom_toTopOf="@+id/textTotal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textTotalMed"
+            android:layout_width="306dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="15dp"
+            android:text="Total de sesiones:"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textSize="27sp"
+            app:layout_constraintEnd_toEndOf="@+id/fortalecimiento3"
+            app:layout_constraintTop_toBottomOf="@+id/fortalecimiento3" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMeditaciones"
+            android:layout_width="402dp"
+            android:layout_height="429dp"
+            android:layout_marginBottom="43dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

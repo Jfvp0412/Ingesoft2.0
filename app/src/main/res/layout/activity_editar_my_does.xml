@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    tools:context=".ClasesPrincipales.EditarMyDoes">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="198dp">
+
+        <TextView
+            android:id="@+id/titlepage"
+            android:layout_marginTop="0dp"
+            android:textSize="26sp"
+            android:textColor="#FFF"
+            android:text="Editar Pendiente"
+            android:textAlignment="center"
+            android:layout_marginBottom="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:background="#131E69"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="-160dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgitemdoes"
+        android:orientation="vertical"
+        android:paddingBottom="22dp"
+        android:paddingTop="22dp">
+
+        <LinearLayout
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="-4dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/addtitle"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Editar Título"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/editarTitulo"
+                android:inputType="text"
+                android:background="@drawable/bginputtask"
+                android:paddingLeft="12dp"
+                android:textColorHint="#B5B5B5"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="Nombre del recordatorio"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/adddesc"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Editar Description"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/editarDesc"
+                android:inputType="text"
+                android:background="@drawable/bginputtask"
+                android:paddingLeft="12dp"
+                android:textColorHint="#B5B5B5"
+                android:maxLength="25"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="Descripción del recordatorio"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/adddate"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Editar Fecha"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/editarFecha"
+                android:inputType="text"
+                android:background="@drawable/bginputtask"
+                android:paddingLeft="12dp"
+                android:textColorHint="#B5B5B5"
+                android:enabled="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="Para cuando"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+            <Button
+                android:id="@+id/btneditarCalendario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Configurar Fecha"
+                android:background="@drawable/bgbtn_calendario"
+                android:textColor="#fff"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/addHora"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Editar Hora"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/editarHoras"
+                android:inputType="text"
+                android:background="@drawable/bginputtask"
+                android:paddingLeft="12dp"
+                android:textColorHint="#B5B5B5"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="A que hora"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+            <Button
+                android:id="@+id/btneditarHora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Configurar Hora"
+                android:background="@drawable/bgbtn_calendario"
+                android:textColor="#fff"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSaveUpdate"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="0dp"
+        android:text="Guardar cambio"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:background="@drawable/bgbtncreate"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Eliminar Recordatorio"
+        android:textColor="#AFAFAF"
+        android:textAllCaps="false"
+        android:background="@drawable/bgbtncancel"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,3047 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClasesPrincipales.RutinasPersonalizadas"
+    android:id="@+id/drawer_layout">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/navigationTheme"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/main_menu"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:background="@color/home_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="#F39696">
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_menu"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="#F39696"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="RUTINAS PERSONALIZADAS"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F39696"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!---INICIO LINEAR LAYOUT PRINCIPIANTE -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EJERCICIOS DE PECHO"
+                            android:textSize="20sp"
+                            android:textColor="#000"
+                            android:textAllCaps="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ver todas"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/flexiones_con_inclinacion"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/EjerPecho1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Flexiones con inclinación"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/miDesc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/miAdd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/fitDos"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fitone"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/flexiones_con_apoyo_de_rodillas"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/EjerPecho2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Flexiones con apoyo de rodillas"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/miDesc2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/miAdd2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fitTres"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/flexiones"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/EjerPecho3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Flexiones"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/miDesc3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/miAdd3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/p4"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/flexiones_con_brazos_abiertos"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/EjerPecho4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Flexiones con brazos abiertos"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/aaaaa4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/miAdd4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/p5"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/flexiones_hindues"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/EjerPecho5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Flexiones hindúes"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/aaaaa5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/miAdd5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/p6"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/flexiones_escalonadas"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/EjerPecho6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Flexiones escalonadas"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/aaaaa6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/miAdd6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/p7"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/flexion_y_rotacion"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/EjerPecho7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Flexión y rotación"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/aaaaa7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/miAdd7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/p8"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/flexiones_en_caja"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/EjerPecho8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="flexiones en Caja"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/aaaaa8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/miAdd8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/p9"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/flexiones_en_diamante"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/EjerPecho9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Flexiones en diamante"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/aaaaa9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/miAdd9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!---FIN LINEAR LAYOUT PRINCIPIANES -->
+
+
+
+
+                </LinearLayout>
+
+                <!---INICIO LINEAR LAYOUT INTERMEDIO -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EJERCICIOS BRAZO"
+                            android:textSize="20sp"
+                            android:textColor="#000"
+                            android:textAllCaps="true"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/triceps_en_silla"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+
+                            <TextView
+                                android:id="@+id/brazo1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Triceps en silla"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/fitCuatroDesc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/miAdd10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/fitCinco"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fitone"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/flexiones_en_diamante"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/brazo2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Flexiones en diamante"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/fitCincoDesc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/punetazos"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/brazo3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Puñetazos"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/fitSeisDesc0"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/inchworms"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/brazo4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Inchworms"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/fitSeisDesc01"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/flexiones"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/brazo5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Flexiones"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/fitSeisDesc010"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/fondos_militares"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/brazo6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Fondos militares"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/fitSeisDesc011"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/triceps_en_suelo"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/brazo7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Triceps en suelo"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/fitSeisDesc012"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/flexion_y_rotacion"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/brazo8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Flexión y rotación"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/fitSeisDesc18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd17"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/saltos_sin_cuerda"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/brazo9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Saltos sin cuerda"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/fitSeisDesc19"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/plancha_diagonal"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/brazo10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Plancha diagonal"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/fitSeisDesc20"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd19"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <!-- FIN LINEAR LAYOUT INTERMEDIO -->
+
+                </LinearLayout>
+
+                <!-- INICIO LINEAR LAYOUT AVANZADO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EJERCICIOS DE PIERNA"
+                            android:textSize="20sp"
+                            android:textColor="#000"
+                            android:textAllCaps="true"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/sentadilla"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Pierna1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sentadillas"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/p1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/miAdd20"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fitone"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/estocada_hacia_atras"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Pierna2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Estocada hacia atrás"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/p2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd21"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/sentadilla_en_pared"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Pierna3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sentadilla en pared"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/p3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd22"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/donkey_isq"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Pierna4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Donkey kicks Izquierda"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/p40"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/donkey_dere"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Pierna5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Donkey kicks Derecha"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/p50"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/fire"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Pierna6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Fire hydrant"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/p60"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd25"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/zancada_frontal"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Pierna7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Zancada frontal"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/p70"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd26"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/sentadilla_de_sumo"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Pierna8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sentadilla de sumo"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/p80"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd27"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/fitNueve"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/levantamiento_de_pantorrillas"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Pierna9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Levantamiento de pantorrillas"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/p90"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd28"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EJERCICIOS DE ABDOMEN"
+                            android:textSize="20sp"
+                            android:textColor="#000"
+                            android:textAllCaps="true"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/abs_v"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/abs1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Abdominales en V"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/a10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/miAdd29"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fitone"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/crunch_abdominales"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/ab2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Crunch abdominales"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/a20"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd30"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/elevaciones_de_piernas"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/abs3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Elevaciones de pierna"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/a30"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd31"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/plancha"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/abs4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Plancha"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/a40"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd32"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/twist_ruso"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/abs5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Twist Ruso"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/a50"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd33"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/toque_al_talon"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/abs6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Toque al talón"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/a60"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd34"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/abdomen2"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/abs7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Abdominales"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/a70"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd35"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/escalada_de_montana"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/abs8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Escalada de montaña"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/a80"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd36"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/burpees"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/abs9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Burpees"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/a90"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd37"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EJERCICIOS DE HOMBRO Y ESPALDA"
+                            android:textSize="20sp"
+                            android:textColor="#000"
+                            android:textAllCaps="true"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/flexion_en_la_pared"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/hombro1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Flexiones en la pared"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/h1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/miAdd38"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fitone"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/plancha_diagonal"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/hombro2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Plancha diagonal"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/h2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd39"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/pose_gato"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/hombro3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Postura gato"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/h30"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd40"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/flexiones_con_inclinacion"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/hombro4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Flexiones con inclinación"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/h40"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd41"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/postura_bebe"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/hombro5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Postura de bebé"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/h50"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd42"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/pose_montania"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/hombro6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hiperextensión"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/h60"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd43"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/flexiones_spiderman"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/hombro7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Flexiones inversas"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/h7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd44"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/superman"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/hombro8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Superman"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/h80"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd45"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fittwo"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="24dp">
+
+                        <ImageView
+                            android:src="@drawable/delfin"
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/hombro9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Flexiones Delfín"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/h90"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="15sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/miAdd46"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dee3e2"
+    tools:context=".ClasesPrincipales.SeriesSets">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutYoga"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="8dp">
+
+        <ImageView
+            android:id="@+id/imgWorkout"
+            android:src="@drawable/logo"
+            android:layout_width="220dp"
+            android:layout_marginLeft="70dp"
+            android:layout_height="220dp"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nombreEjerSets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="24dp"
+        android:lineSpacingExtra="8dp"
+        android:text="Nombre del Ejercicio"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutYoga"
+        android:layout_marginLeft="24dp" />
+
+
+    <TextView
+        android:id="@+id/subDescEjerSets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="6dp"
+        android:lineSpacingExtra="5dp"
+        android:text="CANTIDAD SETS Y EJERCICIOS."
+        android:textColor="#3A3A3A"
+        android:textSize="16sp"
+        app:fontFamily="sans-serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreEjerSets"
+        android:layout_marginLeft="24dp" />
+
+    <View
+        android:id="@+id/divpage"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:background="#25293E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subDescEjerSets"
+        />
+
+
+    <TextView
+        android:id="@+id/timerMarcas"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:justificationMode="inter_word"
+        android:text="Para realizar la postura de la silla partimos con los brazos a ambos lados del cuerpo y los pies separados aproximadamente a la anchura de la cadera. Elevamos nuestros brazos hacia el techo, con la musculatura de los mismos activada y las palmas de las manos enfrentadas, y hasta que los llevamos aproximadamente a la altura de las orejas. Al soltar el aire flexionamos ligeramente las rodillas, intentando que estas queden prácticamente a la misma altura que los tobillos"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divpage" />
+
+    <View
+        android:id="@+id/bgprogress"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/btnContinuarRutina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="CONTINUAR"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
